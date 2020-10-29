@@ -1,0 +1,29 @@
+2020-10-22 04:02:16,372 INFO  org.apache.flink.client.CliFrontend                           - --------------------------------------------------------------------------------
+2020-10-22 04:02:16,373 INFO  org.apache.flink.client.CliFrontend                           -  Starting Command Line Client (Version: 1.1.1, Rev:61bfb36, Date:09.08.2016 @ 12:09:08 UTC)
+2020-10-22 04:02:16,373 INFO  org.apache.flink.client.CliFrontend                           -  Current user: liuke
+2020-10-22 04:02:16,373 INFO  org.apache.flink.client.CliFrontend                           -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.201-b09
+2020-10-22 04:02:16,373 INFO  org.apache.flink.client.CliFrontend                           -  Maximum heap size: 14242 MiBytes
+2020-10-22 04:02:16,373 INFO  org.apache.flink.client.CliFrontend                           -  JAVA_HOME: /usr/local/src/jdk1.8.0_201
+2020-10-22 04:02:16,375 INFO  org.apache.flink.client.CliFrontend                           -  Hadoop version: 2.7.2
+2020-10-22 04:02:16,375 INFO  org.apache.flink.client.CliFrontend                           -  JVM Options:
+2020-10-22 04:02:16,375 INFO  org.apache.flink.client.CliFrontend                           -     -Dlog.file=/home/liuke/flink-1.1.1/log/flink-liuke-client-dl12.log
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           -     -Dlog4j.configuration=file:/home/liuke/flink-1.1.1/conf/log4j-cli.properties
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           -     -Dlogback.configurationFile=file:/home/liuke/flink-1.1.1/conf/logback.xml
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           -  Program Arguments:
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           -     run
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           -     ../Approximate/kafka-flink-consumer/target/kafka-flink-101-1.0-SNAPSHOT.jar
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           -  Classpath: /home/liuke/flink-1.1.1/lib/flink-dist_2.11-1.1.1.jar:/home/liuke/flink-1.1.1/lib/flink-python_2.11-1.1.1.jar:/home/liuke/flink-1.1.1/lib/log4j-1.2.17.jar:/home/liuke/flink-1.1.1/lib/slf4j-log4j12-1.7.7.jar:::
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           - --------------------------------------------------------------------------------
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           - Using configuration directory /home/liuke/flink-1.1.1/conf
+2020-10-22 04:02:16,376 INFO  org.apache.flink.client.CliFrontend                           - Trying to load configuration file
+2020-10-22 04:02:16,540 INFO  org.apache.flink.client.CliFrontend                           - Running 'run' command.
+2020-10-22 04:02:16,544 INFO  org.apache.flink.client.CliFrontend                           - Building program from JAR file
+2020-10-22 04:02:16,547 ERROR org.apache.flink.client.CliFrontend                           - Error while running the command.
+org.apache.flink.client.program.ProgramInvocationException: Neither a 'Main-Class', nor a 'program-class' entry was found in the jar file.
+	at org.apache.flink.client.program.PackagedProgram.getEntryPointClassNameFromJar(PackagedProgram.java:575)
+	at org.apache.flink.client.program.PackagedProgram.<init>(PackagedProgram.java:188)
+	at org.apache.flink.client.program.PackagedProgram.<init>(PackagedProgram.java:126)
+	at org.apache.flink.client.CliFrontend.buildProgram(CliFrontend.java:832)
+	at org.apache.flink.client.CliFrontend.run(CliFrontend.java:225)
+	at org.apache.flink.client.CliFrontend.parseParameters(CliFrontend.java:1005)
+	at org.apache.flink.client.CliFrontend.main(CliFrontend.java:1048)

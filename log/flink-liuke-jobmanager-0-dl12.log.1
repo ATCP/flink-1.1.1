@@ -1,0 +1,76 @@
+2020-09-03 04:06:04,525 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-09-03 04:06:04,610 INFO  org.apache.flink.runtime.jobmanager.JobManager                - --------------------------------------------------------------------------------
+2020-09-03 04:06:04,610 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Starting JobManager (Version: 1.1.1, Rev:61bfb36, Date:09.08.2016 @ 12:09:08 UTC)
+2020-09-03 04:06:04,610 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Current user: liuke
+2020-09-03 04:06:04,610 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.201-b09
+2020-09-03 04:06:04,610 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Maximum heap size: 245 MiBytes
+2020-09-03 04:06:04,610 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JAVA_HOME: /usr/local/src/jdk1.8.0_201
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Hadoop version: 2.7.2
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM Options:
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Xms256m
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Xmx256m
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlog.file=/home/liuke/flink-1.1.1/log/flink-liuke-jobmanager-0-dl12.log
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlog4j.configuration=file:/home/liuke/flink-1.1.1/conf/log4j.properties
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlogback.configurationFile=file:/home/liuke/flink-1.1.1/conf/logback.xml
+2020-09-03 04:06:04,639 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Program Arguments:
+2020-09-03 04:06:04,640 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     --configDir
+2020-09-03 04:06:04,640 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     /home/liuke/flink-1.1.1/conf
+2020-09-03 04:06:04,640 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     --executionMode
+2020-09-03 04:06:04,640 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     cluster
+2020-09-03 04:06:04,640 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Classpath: /home/liuke/flink-1.1.1/lib/flink-dist_2.11-1.1.1.jar:/home/liuke/flink-1.1.1/lib/flink-python_2.11-1.1.1.jar:/home/liuke/flink-1.1.1/lib/log4j-1.2.17.jar:/home/liuke/flink-1.1.1/lib/slf4j-log4j12-1.7.7.jar:::
+2020-09-03 04:06:04,640 INFO  org.apache.flink.runtime.jobmanager.JobManager                - --------------------------------------------------------------------------------
+2020-09-03 04:06:04,641 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Registered UNIX signal handlers for [TERM, HUP, INT]
+2020-09-03 04:06:04,757 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Loading configuration from /home/liuke/flink-1.1.1/conf
+2020-09-03 04:06:04,775 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager without high-availability
+2020-09-03 04:06:04,794 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager on 172.16.112.12:6123 with execution mode CLUSTER
+2020-09-03 04:06:04,816 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Security is not enabled. Starting non-authenticated JobManager.
+2020-09-03 04:06:04,823 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager
+2020-09-03 04:06:04,824 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager actor system at 172.16.112.12:6123
+2020-09-03 04:06:05,110 INFO  akka.event.slf4j.Slf4jLogger                                  - Slf4jLogger started
+2020-09-03 04:06:05,190 INFO  Remoting                                                      - Starting remoting
+2020-09-03 04:06:05,364 INFO  Remoting                                                      - Remoting started; listening on addresses :[akka.tcp://flink@172.16.112.12:6123]
+2020-09-03 04:06:05,369 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager web frontend
+2020-09-03 04:06:05,382 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils           - Determined location of JobManager log file: /home/liuke/flink-1.1.1/log/flink-liuke-jobmanager-0-dl12.log
+2020-09-03 04:06:05,382 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils           - Determined location of JobManager stdout file: /home/liuke/flink-1.1.1/log/flink-liuke-jobmanager-0-dl12.out
+2020-09-03 04:06:05,451 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Using directory /tmp/flink-web-2ead7ac1-8607-4b27-aaf9-455e901b9506 for the web interface files
+2020-09-03 04:06:05,452 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Using directory /tmp/flink-web-upload-b7ebf395-54cc-4e5f-925f-c0aa4f514d8c for web frontend JAR file uploads
+2020-09-03 04:06:05,730 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Web frontend listening at 0:0:0:0:0:0:0:0:8081
+2020-09-03 04:06:05,730 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager actor
+2020-09-03 04:06:05,734 INFO  org.apache.flink.runtime.blob.BlobServer                      - Created BLOB server storage directory /tmp/blobStore-ca2cb073-7add-4443-9ff7-adaa742da3a8
+2020-09-03 04:06:05,735 INFO  org.apache.flink.runtime.blob.BlobServer                      - Started BLOB server at 0.0.0.0:46253 - max concurrent requests: 50 - max backlog: 1000
+2020-09-03 04:06:05,741 INFO  org.apache.flink.runtime.checkpoint.savepoint.SavepointStoreFactory  - Using job manager savepoint state backend.
+2020-09-03 04:06:05,745 INFO  org.apache.flink.runtime.metrics.MetricRegistry               - No metrics reporter configured, no metrics will be exposed/reported.
+2020-09-03 04:06:05,748 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Starting with JobManager akka.tcp://flink@172.16.112.12:6123/user/jobmanager on port 8081
+2020-09-03 04:06:05,748 INFO  org.apache.flink.runtime.webmonitor.JobManagerRetriever       - New leader reachable under akka.tcp://flink@172.16.112.12:6123/user/jobmanager:null.
+2020-09-03 04:06:05,750 INFO  org.apache.flink.runtime.jobmanager.MemoryArchivist           - Started memory archivist akka://flink/user/archive
+2020-09-03 04:06:05,751 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager at akka.tcp://flink@172.16.112.12:6123/user/jobmanager.
+2020-09-03 04:06:05,756 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - Trying to associate with JobManager leader akka.tcp://flink@172.16.112.12:6123/user/jobmanager
+2020-09-03 04:06:05,879 INFO  org.apache.flink.runtime.jobmanager.JobManager                - JobManager akka.tcp://flink@172.16.112.12:6123/user/jobmanager was granted leadership with leader session ID None.
+2020-09-03 04:06:05,882 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - Resource Manager associating with leading JobManager Actor[akka://flink/user/jobmanager#-1708232744] - leader session null
+2020-09-03 04:16:11,916 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='fd89aa08c4c015c8491fedc31e26ec14'} has started.
+2020-09-03 04:16:11,918 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl16 (akka.tcp://flink@127.0.1.1:36196/user/taskmanager) as fb567b788d771937b43ba8ac20aeecec. Current number of registered hosts is 1. Current number of alive task slots is 1.
+2020-09-03 04:16:48,351 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='3ff2df96946c5b99bd57d106762b002e'} has started.
+2020-09-03 04:16:48,351 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl13 (akka.tcp://flink@172.16.112.13:41847/user/taskmanager) as 8ae1aa1e042a5100bae032e75c5dc2b8. Current number of registered hosts is 2. Current number of alive task slots is 2.
+2020-09-03 04:16:48,371 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='0e774370d5747aa33a9b06c09c444a09'} has started.
+2020-09-03 04:16:48,371 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl16 (akka.tcp://flink@127.0.1.1:42414/user/taskmanager) as 4cb1d8dfc5b0c9dff9e727b82428fa13. Current number of registered hosts is 3. Current number of alive task slots is 3.
+2020-09-03 04:27:35,385 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='0e698e1f5cdac9d67af99014adf74b5f'} has started.
+2020-09-03 04:27:35,385 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl13 (akka.tcp://flink@172.16.112.13:43076/user/taskmanager) as 0184865adbd6797388070c9bc8360612. Current number of registered hosts is 4. Current number of alive task slots is 4.
+2020-09-03 04:27:36,026 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='78d9e35a5821d71cbbfcef5c8403b2d9'} has started.
+2020-09-03 04:27:36,026 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl16 (akka.tcp://flink@127.0.1.1:43153/user/taskmanager) as 0524ea76fc97d5e4030c5770866c78fb. Current number of registered hosts is 5. Current number of alive task slots is 5.
+2020-09-03 04:28:13,626 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='c7500deff33335e9bbeef272960293aa'} has started.
+2020-09-03 04:28:13,626 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl13 (akka.tcp://flink@172.16.112.13:44587/user/taskmanager) as aab977da68602c4a8e320f02d6e75b4f. Current number of registered hosts is 6. Current number of alive task slots is 6.
+2020-09-03 04:28:14,236 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='90697f77ede03823adfe9d2c40ed9727'} has started.
+2020-09-03 04:28:14,237 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl16 (akka.tcp://flink@127.0.1.1:37193/user/taskmanager) as 4ce3809e236c794fff0b60e65f766f0a. Current number of registered hosts is 7. Current number of alive task slots is 7.
+2020-09-03 04:48:42,619 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='4759aa69390a8d36104312db383dd7d7'} has started.
+2020-09-03 04:48:42,619 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl13 (akka.tcp://flink@172.16.112.13:40316/user/taskmanager) as 18e7f242ebf0a812d410408542d9e328. Current number of registered hosts is 8. Current number of alive task slots is 8.
+2020-09-03 04:48:43,173 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='c86bf9c15430334d7c077f26001d203c'} has started.
+2020-09-03 04:48:43,173 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl16 (akka.tcp://flink@127.0.1.1:46122/user/taskmanager) as 64135ce730175b4e666c637ac2073b6b. Current number of registered hosts is 9. Current number of alive task slots is 9.
+2020-09-03 04:48:53,065 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='a2bee5cf3caba769760c2ff9aba33269'} has started.
+2020-09-03 04:48:53,065 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl13 (akka.tcp://flink@172.16.112.13:36349/user/taskmanager) as defab9b39dd2a4bb72d12f21756e705b. Current number of registered hosts is 10. Current number of alive task slots is 10.
+2020-09-03 04:48:53,693 INFO  org.apache.flink.runtime.clusterframework.standalone.StandaloneResourceManager  - TaskManager ResourceID{resourceId='2fdca26dc9ec69ddcfa6c2349c0091ca'} has started.
+2020-09-03 04:48:53,693 INFO  org.apache.flink.runtime.instance.InstanceManager             - Registered TaskManager at dl16 (akka.tcp://flink@127.0.1.1:41972/user/taskmanager) as 0e5da49924f64eb3b8006b671e228b8e. Current number of registered hosts is 11. Current number of alive task slots is 11.
+2020-09-20 21:09:01,814 INFO  org.apache.flink.runtime.jobmanager.JobManager                - RECEIVED SIGNAL 1: SIGHUP. Shutting down as requested.
+2020-09-20 21:09:01,814 INFO  org.apache.flink.runtime.jobmanager.JobManager                - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2020-09-20 21:09:02,739 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Removing web dashboard root cache directory /tmp/flink-web-2ead7ac1-8607-4b27-aaf9-455e901b9506
+2020-09-20 21:09:04,361 INFO  org.apache.flink.runtime.webmonitor.WebRuntimeMonitor         - Removing web dashboard jar upload directory /tmp/flink-web-upload-b7ebf395-54cc-4e5f-925f-c0aa4f514d8c
+2020-09-20 21:09:05,683 INFO  org.apache.flink.runtime.blob.BlobServer                      - Stopped BLOB server at 0.0.0.0:46253

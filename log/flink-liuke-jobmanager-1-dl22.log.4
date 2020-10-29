@@ -1,0 +1,33 @@
+2020-10-24 17:09:22,956 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-10-24 17:09:23,018 INFO  org.apache.flink.runtime.jobmanager.JobManager                - --------------------------------------------------------------------------------
+2020-10-24 17:09:23,018 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Starting JobManager (Version: 1.1.1, Rev:61bfb36, Date:09.08.2016 @ 12:09:08 UTC)
+2020-10-24 17:09:23,018 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Current user: liuke
+2020-10-24 17:09:23,018 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.211-b12
+2020-10-24 17:09:23,018 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Maximum heap size: 245 MiBytes
+2020-10-24 17:09:23,018 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JAVA_HOME: /usr/local/jdk1.8.0_211
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Hadoop version: 2.7.2
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  JVM Options:
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Xms256m
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Xmx256m
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlog.file=/home/liuke/flink-1.1.1/log/flink-liuke-jobmanager-1-dl22.log
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlog4j.configuration=file:/home/liuke/flink-1.1.1/conf/log4j.properties
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     -Dlogback.configurationFile=file:/home/liuke/flink-1.1.1/conf/logback.xml
+2020-10-24 17:09:23,020 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Program Arguments:
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     --configDir
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     /home/liuke/flink-1.1.1/conf
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     --executionMode
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                -     cluster
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                -  Classpath: /home/liuke/flink-1.1.1/lib/flink-dist_2.11-1.1.1.jar:/home/liuke/flink-1.1.1/lib/flink-python_2.11-1.1.1.jar:/home/liuke/flink-1.1.1/lib/log4j-1.2.17.jar:/home/liuke/flink-1.1.1/lib/slf4j-log4j12-1.7.7.jar:::
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                - --------------------------------------------------------------------------------
+2020-10-24 17:09:23,021 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Registered UNIX signal handlers for [TERM, HUP, INT]
+2020-10-24 17:09:23,119 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Loading configuration from /home/liuke/flink-1.1.1/conf
+2020-10-24 17:09:23,132 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager without high-availability
+2020-10-24 17:09:23,137 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Starting JobManager on 10.0.11.22:6123 with execution mode CLUSTER
+2020-10-24 17:09:23,154 INFO  org.apache.flink.runtime.jobmanager.JobManager                - Security is not enabled. Starting non-authenticated JobManager.
+2020-10-24 17:09:23,159 INFO  org.apache.flink.util.NetUtils                                - Unable to allocate on port 6123, due to error: Address already in use (Bind failed)
+2020-10-24 17:09:23,160 ERROR org.apache.flink.runtime.jobmanager.JobManager                - Failed to run JobManager.
+java.lang.RuntimeException: Unable to do further retries starting the actor system
+	at org.apache.flink.runtime.jobmanager.JobManager$.retryOnBindException(JobManager.scala:2116)
+	at org.apache.flink.runtime.jobmanager.JobManager$.runJobManager(JobManager.scala:2056)
+	at org.apache.flink.runtime.jobmanager.JobManager$.main(JobManager.scala:1981)
+	at org.apache.flink.runtime.jobmanager.JobManager.main(JobManager.scala)
