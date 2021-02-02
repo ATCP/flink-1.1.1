@@ -24,27 +24,23 @@
 # The host on which the JobManager runs. Only used in non-high-availability mode.
 # The JobManager process will use this hostname to bind the listening servers to.
 # The TaskManagers will try to connect to the JobManager on that host.
-
 jobmanager.rpc.address: 10.0.11.22
 
 # The port where the JobManager's main actor system listens for messages.
 
 jobmanager.rpc.port: 6123
 
-
 # The heap size for the JobManager JVM
 
-jobmanager.heap.mb: 2048
-
+jobmanager.heap.mb: 4096
 
 # The heap size for the TaskManager JVM
 
-taskmanager.heap.mb: 2048
-
+taskmanager.heap.mb: 4096
 
 # The number of task slots that each TaskManager offers. Each slot runs one parallel pipeline.
 
-taskmanager.numberOfTaskSlots: 2
+taskmanager.numberOfTaskSlots: 3
 
 # Specify whether TaskManager memory should be allocated when starting up (true) or when
 # memory is required in the memory manager (false)
@@ -55,7 +51,7 @@ taskmanager.memory.preallocate: false
 
 parallelism.default: 1
 
-taskmanager.data.port: 88999
+#taskmanager.data.port: 88999
 #==============================================================================
 # Web Frontend
 #==============================================================================
@@ -69,7 +65,8 @@ jobmanager.web.port: 8081
 # runtime monitor. Uncomment to disable.
 
 #jobmanager.web.submit.enable: false
-
+#yarn.application-master.env.LD_PRELOAD: "/home/liuke/Approximate/ld_preload/atp-impl/bin/my_read.so"
+#yarn.taskmanager.env.LD_PRELOAD: "/home/liuke/Approximate/ld_preload/atp-impl/bin/my_read.so"
 
 #==============================================================================
 # Streaming state checkpointing
@@ -145,3 +142,5 @@ jobmanager.web.port: 8081
 # directory (see above) before configuring the storageDir.
 #
 # recovery.zookeeper.storageDir: hdfs:///recovery
+
+

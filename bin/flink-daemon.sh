@@ -101,6 +101,7 @@ case $STARTSTOP in
         fi
 
         echo "Starting $DAEMON daemon on host $HOSTNAME."
+        #LD_PRELOAD=../Approximate/ld_preload/atp-impl/bin/my_read.so 
         $JAVA_RUN $JVM_ARGS ${FLINK_ENV_JAVA_OPTS} "${log_setting[@]}" -classpath "`manglePathList "$FLINK_TM_CLASSPATH:$INTERNAL_HADOOP_CLASSPATHS"`" ${CLASS_TO_RUN} "${ARGS[@]}" > "$out" 2>&1 < /dev/null &
 
         mypid=$!
