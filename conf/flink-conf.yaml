@@ -24,7 +24,7 @@
 # The host on which the JobManager runs. Only used in non-high-availability mode.
 # The JobManager process will use this hostname to bind the listening servers to.
 # The TaskManagers will try to connect to the JobManager on that host.
-jobmanager.rpc.address: 10.0.11.22
+#jobmanager.rpc.address: 10.0.11.112
 
 # The port where the JobManager's main actor system listens for messages.
 
@@ -65,8 +65,8 @@ jobmanager.web.port: 8081
 # runtime monitor. Uncomment to disable.
 
 #jobmanager.web.submit.enable: false
-#yarn.application-master.env.LD_PRELOAD: "/home/liuke/Approximate/ld_preload/atp-impl/bin/my_read.so"
-#yarn.taskmanager.env.LD_PRELOAD: "/home/liuke/Approximate/ld_preload/atp-impl/bin/my_read.so"
+yarn.application-master.env.LD_PRELOAD: "/home/liuke/Approximate/ld_preload/atp-impl/bin/my_read.so"
+yarn.taskmanager.env.LD_PRELOAD: "/home/liuke/Approximate/ld_preload/atp-impl/bin/my_read.so"
 
 #==============================================================================
 # Streaming state checkpointing
