@@ -24,7 +24,7 @@
 # The host on which the JobManager runs. Only used in non-high-availability mode.
 # The JobManager process will use this hostname to bind the listening servers to.
 # The TaskManagers will try to connect to the JobManager on that host.
-#jobmanager.rpc.address: 10.0.11.112
+#jobmanager.rpc.address: 172.16.112.12
 
 # The port where the JobManager's main actor system listens for messages.
 
